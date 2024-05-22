@@ -1,6 +1,7 @@
 # Curso de JavaScript 
 
 #### Seções Rapidas:
+* [Comandos Git](#git-comandos)
 
 * [Comandos Basicos em JS](#comandos-basicos)
 
@@ -750,4 +751,26 @@ ex:
         console.log(`${amigo.nome} pesa ${amigo.peso}`)
 
         
+<a id="git-comandos"></a>
+## Git comandos 
 
+Crie um novo repositório na linha de comando
+
+```
+echo "# curso-js" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/natanassis/curso-js.git
+git push -u origin main
+
+```
+Enviar por push um repositório existente a partir da linha de comando
+
+```
+git remote add origin https://github.com/natanassis/curso-js.git
+git branch -M main
+git push -u origin main
+
+```
