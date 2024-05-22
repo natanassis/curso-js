@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font: normal 20pt Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        var nome = window.prompt("qual é o seu nome")
+        var idade = window.prompt("Sua idade: ")
+        var altura = window.prompt("Sua altura: ")
+        var salario = window.prompt("salario :")
+        document.write(`<p>Seu nome: <strong>${nome}</strong> tem ${nome.length} letras</p>`)
+        document.write(`<p>Seu em minusculo: ${nome.toLowerCase()}</p>`)
+        document.write(`<p>Seu em maisculo: ${nome.toUpperCase()}</p>`)
+    
+        var  n1 = parseFloat(salario)
+        n1.toFixed(2).replace('.',',')
+        var n2 = n1.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})
+        
+        document.write(`<p> Salario: ${n2}</p>`)
+    </script>
+
+
+
+</body>
+</html>

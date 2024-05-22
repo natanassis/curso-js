@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background: aqua;
+            color: azure;
+            font: normal 18pt  Arial;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Iniciando os estduos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Apredendo a  usar o <strong>DOM</strong> em JavaScript</p>
+    <div class="msg">Clique em min</div>
+    
+    <script>
+        var corpo = window.document.body
+        var p1 = document.getElementsByTagName('p')[1]
+        //var d  = document.getElementById('msg')
+        //var d = document.getElementsByName('msg')[0]
+        //d.style.background = 'black'
+        // d.innerText ='Estou aguardando...'
+        // //window.document.write('Está escrito assim: ' + p1.innerText)  
+        // //p1.style.color = 'black'
+        // //corpo.style.background = 'black'
+        
+        // document.write(p1.innerHTML)
+
+        // para usar como ID
+        //var d = document.querySelector('div#msg')
+        //d.style.background = 'white'
+
+        // por class 
+        var d  =document.querySelector('div.msg')
+        d.style.background = 'black'
+
+    </script>
+</body>
+</html>
